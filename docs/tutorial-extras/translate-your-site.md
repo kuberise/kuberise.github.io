@@ -1,7 +1,7 @@
 ---
 sidebar_position: 2
 ---
-
+<!--
 # Translate your site
 
 Let's translate `docs/intro.md` to French.
@@ -85,4 +85,4 @@ Or build your site to include all the locales at once:
 
 ```bash
 npm run build
-```
+``` -->

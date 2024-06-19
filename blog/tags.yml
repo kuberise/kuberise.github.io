@@ -1,16 +1,12 @@
-facebook:
-  label: Facebook
-  permalink: /facebook
-  description: Facebook tag description
-hello:
-  label: Hello
-  permalink: /hello
-  description: Hello tag description
-docusaurus:
-  label: Docusaurus
-  permalink: /docusaurus
-  description: Docusaurus tag description
-hola:
-  label: Hola
-  permalink: /hola
-  description: Hola tag description
+kuberise:
+  label: kuberise
+  permalink: /kuberise
+  description: kuberise idp platform
+idp:
+  label: idp
+  permalink: /idp
+  description: Internal Developer Platform
+kubernetes:
+  label: kubernetes
+  permalink: /kubernetes
+  description: kubernetes platform
