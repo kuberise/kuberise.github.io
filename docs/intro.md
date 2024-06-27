@@ -1,47 +1,41 @@
 ---
+slug: intro
+title: Intro
+sidebar_label: Intro
 sidebar_position: 1
 ---
-<!--
-# Tutorial Intro
 
-Let's discover **Docusaurus in less than 5 minutes**.
+![kuberise logo](../static/img/docs_images/full-logo.svg)
+# kuberise.io
 
-## Getting Started
+kuberise.io is a free opensource internal developer platform for Kubernetes environment. The goal is to provide tools and templates in Kubernetes environment by a fast and easy installation to help developers focus on the development of the business applications rather than installation and configuration of side tools and preparations of the environments and automation.
 
-Get started by **creating a new site**.
+## Prerequisites
 
-Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
+- CLI tools: kubectl, helm, htpasswd, git
+- A Github account or another git repository system
+- [K9s](https://k9scli.io/topics/install/) for dashboard (recommended)
+- A [kind](https://kind.sigs.k8s.io/docs/user/quick-start#installation) kubernetes cluster for local installation (`kind create cluster`)
+- [cloud-provider-kind](https://github.com/kubernetes-sigs/cloud-provider-kind) for loadBalancer services and ingresses.
 
-### What you'll need
+## Installation
 
-- [Node.js](https://nodejs.org/en/download/) version 18.0 or above:
-  - When installing Node.js, you are recommended to check all checkboxes related to dependencies.
-
-## Generate a new site
-
-Generate a new Docusaurus site using the **classic template**.
-
-The classic template will automatically be added to your project after you run the command:
+1. Fork the current repository [https://github.com/kuberise/kuberise.io](https://github.com/kuberise/kuberise.io) into your Github account, or clone and push it to your other git repository.
+2. Run these commands (first modify the url of the repository to point to your new repository):
 
 ```bash
-npm init docusaurus@latest my-website classic
+export GITHUB_USER=[yourUserName]
+export REPO_URL=https://github.com/$GITHUB_USER/kuberise.io.git
+git clone $REPO_URL
+cd kuberise.io
+
+export CONTEXT=$(kubectl config current-context)
+export PLATFORM_NAME=kind-sample
+export REVISION=main
+export ADMIN_PASSWORD=admin
+export PG_SUPERUSER_PASSWORD=superpassword
+export PG_APP_PASSWORD=apppassword
+
+./scripts/install.sh $CONTEXT $PLATFORM_NAME $REPO_URL $REVISION
 ```
 
-You can type this command into Command Prompt, Powershell, Terminal, or any other integrated terminal of your code editor.
-
-The command also installs all necessary dependencies you need to run Docusaurus.
-
-## Start your site
-
-Run the development server:
-
-```bash
-cd my-website
-npm run start
-```
-
-The `cd` command changes the directory you're working with. In order to work with your newly created Docusaurus site, you'll need to navigate the terminal there.
-
-The `npm run start` command builds your website locally and serves it through a development server, ready for you to view at http://localhost:3000/.
-
-Open `docs/intro.md` (this page) and edit some lines: the site **reloads automatically** and displays your changes. -->
