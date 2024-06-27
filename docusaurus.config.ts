@@ -5,7 +5,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 const config: Config = {
   title: 'Kuberise',
   tagline: 'Kubernetes made easy',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/kuberise.io-Icon-transparent.png',
 
   // Set the production url of your site here
   url: 'https://kuberise.io',
