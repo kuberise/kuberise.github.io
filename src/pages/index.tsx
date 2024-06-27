@@ -24,7 +24,7 @@ function Home() {
           <div className={styles.heroInner}>
             <h1 className={styles.heroProjectTagline}>
               <img
-                alt="Otomi logo"
+                alt="Kuberise logo"
                 className={styles.heroLogo}
                 src={useBaseUrl("img/kuberise.io-Icon-transparent.png")}
               />
