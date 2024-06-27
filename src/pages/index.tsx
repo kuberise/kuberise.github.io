@@ -29,9 +29,9 @@ function Home() {
                 src={useBaseUrl("img/kuberise.io-Icon-transparent.png")}
               />
 
-              Application Platform for Kubernetes
+              kuberise.io
             </h1>
-            <h2 className={styles.heroProjectSubLine}>A paved road from code to production</h2>
+            <h2 className={styles.heroProjectSubLine}>An Internal Developer Platform for Kubernetes</h2>
             <div className={styles.indexCtas}>
               <Link
                 className={styles.indexCtasGetStartedButton}
@@ -53,7 +53,7 @@ function Home() {
         </div>
         <div className={clsx(styles.announcement, styles.announcementBanner)}>
           <div className={styles.announcementInner}>
-            <h1>Build, Deploy and Run applications at scale</h1> <h4>With one consistent experience on any CNCF conformant Kubernetes cluster</h4>
+            <h1>Install and configure platfrom tools and services with one command</h1> <h4>Increase the productivity of your developers and reduce time to market. </h4>
           </div>
           <div>
             {/* <img
