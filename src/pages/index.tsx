@@ -28,14 +28,14 @@ function Home() {
                 className={styles.heroLogo}
                 src={useBaseUrl("img/kuberise.io-Icon-transparent.png")}
               />
-             
+
               Application Platform for Kubernetes
             </h1>
             <h2 className={styles.heroProjectSubLine}>A paved road from code to production</h2>
             <div className={styles.indexCtas}>
               <Link
                 className={styles.indexCtasGetStartedButton}
-                to={useBaseUrl("/docs")}
+                to={useBaseUrl("/docs/intro")}
               >
                 Get Started with Kuberise
               </Link>
@@ -56,10 +56,10 @@ function Home() {
             <h1>Build, Deploy and Run applications at scale</h1> <h4>With one consistent experience on any CNCF conformant Kubernetes cluster</h4>
           </div>
           <div>
-            {/* <img 
+            {/* <img
               src={useBaseUrl("img/kuberise-console.png")}
-              alt="kuberise bash console" 
-              width="800" 
+              alt="kuberise bash console"
+              width="800"
               height="600"
             /> */}
           </div>
