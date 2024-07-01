@@ -72,19 +72,46 @@
   max-width: 768px;
 }
 
+[data-theme='dark'] .announcementInner {
+  margin: 0 auto;
+  max-width: 768px;
+  color: rgba(0, 0, 0, .9);
+}
+
 .hero {
-  padding: 48px;
+  /* padding: 48px; */
+  align-items: center;
+
+  display: flex;
+  justify-content: center; 
+  margin-bottom: 20px; 
+
+  height: calc(100vh - 50px);
+ 
 }
 
 .heroInner {
   margin: 0 auto;
   max-width: 1100px;
-  padding: 0 20px;
+  /* padding: 0 20px; */
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: center;
+  align-items: center;
 }
 
 .heroProjectTagline {
   font-size: 60px;
   margin: 0;
+  justify-content: center;
+
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  flex-direction: column;
+  text-align: center; 
 }
 
 .heroProjectKeywords {
@@ -94,11 +121,11 @@
 .heroLogo {
   animation-duration: 2s;
   animation-name: jackInTheBox;
-  float: right;
-  margin-top: 20px;
-  padding: 0 20px 20px;
-  width: 25vw;
-  height: 20vw;
+  /* float: right; */
+  /* margin-top: 20px; */
+  /* padding: 0 20px 20px; */
+  width: 25vW;
+  height: 20vW;
 }
 
 .logo {
@@ -108,7 +135,9 @@
 .indexCtas {
   display: flex;
   align-items: center;
-  margin-top: 24px;
+
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .indexCtasGetStartedButton {
@@ -121,16 +150,24 @@
   font-size: 24px;
   font-weight: bold;
   padding: 18px 36px;
+  white-space: nowrap;
 }
 
 .indexCtasGitHubButtonWrapper {
   display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-left: 20px;
+  margin-bottom: 10px;
 }
 
 .indexCtasGitHubButton {
   border: none;
-  margin-left: 24px;
+  margin-left: 20px;
   overflow: hidden;
+  display: block;
+  margin-bottom: 10px;
+
 }
 
 
@@ -172,8 +209,8 @@
     display: block;
     float: none;
     margin: 0 auto;
-    width: 44vw;
-    height: 44vw;
+    width: 45vW;
+    height: 35vW;
   }
 
   .indexCtas {
