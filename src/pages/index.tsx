@@ -22,23 +22,17 @@ function Home() {
       <main>
         <div className={styles.hero}>
           <div className={styles.heroInner}>
+            <img
+              alt="Kuberise logo"
+              className={styles.heroLogo}
+              src={useBaseUrl("img/kuberise.io-Icon-transparent.png")}
+            />
             <h1 className={styles.heroProjectTagline}>
-              <img
-                alt="Kuberise logo"
-                className={styles.heroLogo}
-                src={useBaseUrl("img/kuberise.io-Icon-transparent.png")}
-              />
 
               kuberise.io
             </h1>
             <h2 className={styles.heroProjectSubLine}>An Internal Developer Platform for Kubernetes</h2>
             <div className={styles.indexCtas}>
-              <Link
-                className={styles.indexCtasGetStartedButton}
-                to={useBaseUrl("/docs/intro")}
-              >
-                Get Started with Kuberise
-              </Link>
               <span className={styles.indexCtasGitHubButtonWrapper}>
                 <iframe
                   className={styles.indexCtasGitHubButton}
@@ -48,6 +42,12 @@ function Home() {
                   title="GitHub Stars"
                 />
               </span>
+              <Link
+                className={styles.indexCtasGetStartedButton}
+                to={useBaseUrl("/docs/intro")}
+              >
+                Get Started with Kuberise
+              </Link>
             </div>
           </div>
         </div>
@@ -70,48 +70,3 @@ function Home() {
 }
 
 export default Home;
-
-
-// import clsx from 'clsx';
-// import Link from '@docusaurus/Link';
-// import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
-// import Layout from '@theme/Layout';
-// import HomepageFeatures from '@site/src/components/HomepageFeatures';
-// import Heading from '@theme/Heading';
-
-// import styles from './index.module.css';
-
-// function HomepageHeader() {
-//   const {siteConfig} = useDocusaurusContext();
-//   return (
-//     <header className={clsx('hero hero--primary', styles.heroBanner)}>
-//       <div className="container">
-//         <Heading as="h1" className="hero__title">
-//           {siteConfig.title}
-//         </Heading>
-//         <p className="hero__subtitle">{siteConfig.tagline}</p>
-//         <div className={styles.buttons}>
-//           <Link
-//             className="button button--secondary button--lg"
-//             to="/docs/intro">
-//             Kuberise Tutorial - 5min ⏱️
-//           </Link>
-//         </div>
-//       </div>
-//     </header>
-//   );
-// }
-
-// export default function Home(): JSX.Element {
-//   const {siteConfig} = useDocusaurusContext();
-//   return (
-//     <Layout
-//       title={`Hello from ${siteConfig.title}`}
-//       description="Description will go into a meta tag in <head />">
-//       <HomepageHeader />
-//       <main>
-//         <HomepageFeatures />
-//       </main>
-//     </Layout>
-//   );
-// }
