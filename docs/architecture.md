@@ -2,7 +2,7 @@
 slug: architecture
 title: Architecture
 sidebar_label: Architecture
-sidebar_position: 2
+sidebar_position: 6
 ---
 
 ### Single platform cluster
