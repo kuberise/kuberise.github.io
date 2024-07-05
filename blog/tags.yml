@@ -1,7 +1,7 @@
 kuberise:
   label: kuberise
   permalink: /kuberise
-  description: kuberise idp platform
+  description: Kuberise Internal Developer Platform
 idp:
   label: idp
   permalink: /idp
@@ -9,4 +9,8 @@ idp:
 kubernetes:
   label: kubernetes
   permalink: /kubernetes
-  description: kubernetes platform
+  description: Kubernetes Platform
+platformengineering:
+  label: platformengineering
+  permalink: /platformengineering
+  description: Platform Engineering
