@@ -1,0 +1,2 @@
+- find the ip of your ingress-nginx service then use that ip for your domain like 172.19.0.3.traefik.me
+- how to find your ca.crt and trust it in your system
