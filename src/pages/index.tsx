@@ -44,7 +44,7 @@ function Home() {
               </span>
               <Link
                 className={styles.indexCtasGetStartedButton}
-                to={useBaseUrl("/docs/intro")}
+                to={useBaseUrl("/docs/introduction")}
               >
                 Get Started with Kuberise
               </Link>
