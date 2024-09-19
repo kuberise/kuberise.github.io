@@ -16,7 +16,7 @@ Assuming you have forked the kuberise repository into your github account and th
 - Choose admin password and also postgresql super admin password
 
 ```sh
-export repoURL=https://github.com/[yourUserName]/kuberise.git
+export repoURL=https://github.com/[yourUserName]/kuberise.io.git
 export PLATFORM=platformName
 export REVISION=main
 
@@ -35,7 +35,7 @@ export PG_APP_PASSWORD=apppassword
 You can clone the kuberise repository and push it to your private repository. In that case you need to add a token to your Github account at the end of the installation command:
 
 ```sh
-export repoURL=https://github.com/[yourUserName]/kuberise.git
+export repoURL=https://github.com/[yourUserName]/kuberise.io.git
 export PLATFORM=platformName
 export TOKEN=[your git repo token]
 export REVISION=main

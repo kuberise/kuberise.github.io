@@ -23,9 +23,9 @@ export CONTEXT=$(kubectl config current-context)
 export ADMIN_PASSWORD=admin
 export PG_SUPERUSER_PASSWORD=superpassword
 export PG_APP_PASSWORD=apppassword
-git clone https://github.com/kuberise/kuberise.git
+git clone https://github.com/kuberise/kuberise.io.git
 cd kuberise
-./scripts/install.sh $CONTEXT local https://github.com/kuberise/kuberise.git main
+./scripts/install.sh $CONTEXT local https://github.com/kuberise/kuberise.io.git main
 ```
 
 You have to answer yes to the confirmation question and then wait few minutes to have all default tools ready. Then run this command to make a tunnel from your local host to your Kubernetes master node:
